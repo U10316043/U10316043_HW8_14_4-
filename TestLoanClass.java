@@ -9,6 +9,7 @@ public class TestLoanClass {
     // Enter yearly interest rate
     System.out.print(
       "Enter yearly interest rate, for example, 8.25: ");
+      /**IllegalArgumentException*/
     double annualInterestRate = input.nextDouble();
 	if(annualInterestRate <= 0){
 		throw new IllegalArgumentException("Annual interest rate is positive.");
@@ -16,6 +17,7 @@ public class TestLoanClass {
 
     // Enter number of years
     System.out.print("Enter number of years as an integer: ");
+     /**IllegalArgumentException*/
     int numberOfYears = input.nextInt();
 	if(numberOfYears <= 0){
 		throw new IllegalArgumentException("Number of years is positive.");
@@ -23,6 +25,7 @@ public class TestLoanClass {
 	
     // Enter loan amount
     System.out.print("Enter loan amount, for example, 120000.95: ");
+     /**IllegalArgumentException*/
     double loanAmount =  input.nextDouble();
 	if(loanAmount <= 0){
 		throw new IllegalArgumentException("Loan amount is positive.");
